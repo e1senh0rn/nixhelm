@@ -42,9 +42,11 @@
         projectDir = ./.;
       };
 
+      formatter = pkgs.nixfmt-tree;
+
       devShell = pkgs.mkShell {
         buildInputs = with pkgs; [
-          nixpkgs-fmt
+          nixfmt-tree
           poetry
           python310Packages.autopep8
           (mkPoetryEnv {
