@@ -67,7 +67,7 @@
           buildInputs = with pkgs; [
             nixfmt-tree
             poetry
-            python310Packages.autopep8
+            ruff
             (mkPoetryEnv {
               python = pkgs.python312;
               projectDir = ./.;
