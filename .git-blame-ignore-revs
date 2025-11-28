@@ -1,1 +1,2 @@
 38b5e5b96dfd3c66db2b121b174c91fc77beeed7 # reformat flake.nix
+dad1b95880a08457525b2492b401805aadf6b9d9 # reformat helmupdater with ruff
