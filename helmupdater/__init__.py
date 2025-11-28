@@ -39,12 +39,12 @@ def build_chart(repo_name: str, chart_name: str, check=False):
 
 def get_hash(repo_name: str, chart_name: str) -> str:
   cp = build_chart(repo_name, chart_name)
-  for l in cp.stderr.split('\n'):
-    l = l.strip()
-    if not l.startswith('got:'):
+  for line in cp.stderr.split('\n'):
+    line = line.strip()
+    if not line.startswith('got:'):
       continue
-    l = l[4:]
-    return l.strip()
+    line = line[4:]
+    return line.strip()
   raise RuntimeError(f'failed to get the hash for {repo_name}/{chart_name}:\n{cp.stderr}')
 
 def get_charts():
