@@ -205,8 +205,8 @@ def update_all(
     rehash_only: bool = typer.Option(False),
 ):
     charts = get_charts()
-    for repo_name, charts in charts.items():
-        for chart_name, local_chart in charts.items():
+    for repo_name, repo_charts in charts.items():
+        for chart_name, local_chart in repo_charts.items():
             print(f"checking {repo_name}/{chart_name}")
             try:
                 update_one_chart(
