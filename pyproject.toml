@@ -19,3 +19,12 @@ build-backend = "poetry.core.masonry.api"
 
 [project.scripts]
 helmupdater = "helmupdater:app"
+
+[tool.ruff.lint]
+select = [
+  "E",  # pycodestyle
+  "F",  # Pyflakes
+  "I",  # isort
+  "B",  # flake8-bugbear
+  "UP", # pyupgrade
+]
