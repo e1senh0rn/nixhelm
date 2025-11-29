@@ -9,7 +9,7 @@ import typer
 import yaml
 from semver import VersionInfo
 
-app = typer.Typer()
+app = typer.Typer(add_completion=False)
 
 CHART_TEMPLATE = """{
   repo = "{{ repo }}";
