@@ -115,6 +115,9 @@
               pkgs.nixfmt-tree
               pkgs.uv
               pkgs.ruff
+              pkgs.kubernetes-helm
+              pkgs.crane
+              pkgs.curl
             ];
 
             env = {
