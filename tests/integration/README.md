@@ -11,7 +11,7 @@ There are sample charts provided for testing purpose:
 - nginx
 - podinfo
 
-Charts are located at `../fixtures/charts/`. Pre-built versions are also included so that chart hash is known ahead of time.
+Charts are located at `./charts/`. Pre-built versions are also included so that chart hash is known ahead of time.
 
 Each chart is available in a few release versions. It is used to test update logic. Note that versioning is implemented slightly differently to reflect real-life scenarios:
 
@@ -69,7 +69,7 @@ This will:
 Make a change to the chart, and bump the chart version. Then do the following:
 
 ```bash
-cd tests/fixtures/charts
+cd tests/integration/charts
 helm package nginx
 helm package podinfo
 ```

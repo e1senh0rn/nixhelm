@@ -2,7 +2,7 @@
 set -euo pipefail
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-CHARTS_DIR="$SCRIPT_DIR/../fixtures/charts"
+CHARTS_DIR="$SCRIPT_DIR/charts"
 REGISTRY_URL="http://localhost:45010"
 
 CHART_FILES="$(find $CHARTS_DIR -maxdepth 1 -type f -path '*.tgz' | sort)"
